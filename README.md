@@ -12,13 +12,13 @@
 - **测试成果**　14 个路由／分镜／提示词回归用例，42/42 条提示词逐字节一致。[验证记录](https://github.com/chinyuan1ngite/storyboard-skill-v0.4-tester/blob/main/LIMITATIONS.md#已经验证)
 - **已知限制**　真实视频效果、口型和声音连续性仍待验证。试生成视频需自行使用 Seedance 服务。
 
-## 02 · 政务产品工作流与视觉设计 Skills
+## 02 · 政务产品工作流与 Agent Skills
 
 [1gnite-pm-skills](https://github.com/chinyuan1ngite/1gnite-pm-skills)
 
 - **解决的问题**　让产品经理和 Agent 把会议结论转成可追溯的需求，减少 PRD、原型、权限台账和验收用例之间的口径偏差。
-- **系统架构**　项目口径库和 `AGENTS.md` 约束协作，稳定编号贯穿会议纪要 → PRD → HTML 原型与结构化台账 → 测试用例。视觉层由通用生图 Skill 和带政务规范、任务路由与参考图的项目适配 Skill 组成。
-- **演示方式**　从模拟会议记录追溯到结构化纪要和 PRD，下载仓库后用浏览器打开 HTML 原型走查交互。[单位管理案例](https://github.com/chinyuan1ngite/1gnite-pm-skills/tree/main/examples/government-project-product-workflow)
+- **系统架构**　项目口径库和 `AGENTS.md` 约束协作，稳定编号贯穿会议纪要 → PRD → HTML 原型与结构化台账 → 测试用例。可复用 Skill 覆盖会议纪要、测试用例设计和视觉生图。
+- **演示方式**　用 `$meeting-minutes` 整理模拟会议记录，用 `$test-case-design` 从 PRD 设计手工用例，再用浏览器走查 HTML 原型。[单位管理案例](https://github.com/chinyuan1ngite/1gnite-pm-skills/tree/main/examples/government-project-product-workflow)
 - **测试成果**　8 条用例均关联 PRD 验收编号，覆盖正常操作、无结果、接口恢复和无权限，执行状态均为「未执行」。[测试用例表](https://github.com/chinyuan1ngite/1gnite-pm-skills/blob/main/examples/government-project-product-workflow/07_%E6%B5%8B%E8%AF%95%E9%AA%8C%E6%94%B6/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95%E7%82%B9.csv)
 - **已知限制**　公开版仅保留一条脱敏业务链路，原型使用示例数据，视觉 Skill 输出概念稿。
 
